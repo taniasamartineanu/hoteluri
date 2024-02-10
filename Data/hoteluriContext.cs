@@ -16,8 +16,9 @@ namespace hoteluri.Data
 
         public DbSet<hoteluri.Models.Hotel> Hotel { get; set; } = default!;
 /*        public DbSet<hoteluri.Models.Camera> Camera { get; set; } = default!;
-*/        public DbSet<hoteluri.Models.Client> Client { get; set; } = default!;
+*/      public DbSet<hoteluri.Models.Client> Client { get; set; } = default!;
         public DbSet<hoteluri.Models.Camera> Camera { get; set; } = default!;
+        public DbSet<hoteluri.Models.Rezervare> Rezervare { get; set; } = default!;
 /*        public DbSet<hoteluri.Models.Rezervare> Rezervare { get; set; } = default!;
 */    }
 }

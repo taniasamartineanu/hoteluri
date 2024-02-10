@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using hoteluri.Data;
 
@@ -11,9 +12,11 @@ using hoteluri.Data;
 namespace hoteluri.Migrations
 {
     [DbContext(typeof(hoteluriContext))]
-    partial class hoteluriContextModelSnapshot : ModelSnapshot
+    [Migration("20240210225333_Rezervari")]
+    partial class Rezervari
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

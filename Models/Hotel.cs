@@ -12,6 +12,8 @@ namespace hoteluri.Models
         [Required(ErrorMessage = "Locația hotelului este obligatorie.")]
         public string Locatie { get; set; }
         public List<Camera> Camere { get; set; } = new List<Camera>();
+        /*public List<Rezervare> Rezervari { get; set; } = new List<Rezervare>();*/
+
 
     }
 }
